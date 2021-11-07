@@ -1,5 +1,5 @@
 {
-  "name": "remark-slate",
+  "name": "@rainbow-scheduler/remark-slate",
   "version": "1.9.0",
   "description": "remark plugin to compile Markdown to a slate compatible object",
   "license": "MIT",
