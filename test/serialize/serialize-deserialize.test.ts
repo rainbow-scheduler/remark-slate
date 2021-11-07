@@ -18,7 +18,7 @@ test('Deserialize and serialize mix of break tags and new lines', (done) => {
     .use(plugin)
     .process(mdown, (_, file) => {
       //@ts-ignore ts doesn't know about file.result
-      const res = file.result;
+      const res: any = file.result;
       expect(res).toMatchSnapshot();
 
       const fin = res.map((v: LeafType | BlockType) => serialize(v)).join('');
@@ -37,7 +37,7 @@ test('Deserialize heading with new line', (done) => {
     .use(plugin)
     .process(headingWithNewLine, (_, file) => {
       //@ts-ignore ts doesn't know about file.result
-      const res = file.result;
+      const res: any = file.result;
       expect(res).toMatchSnapshot();
 
       const fin = res.map((v: LeafType | BlockType) => serialize(v)).join('');
